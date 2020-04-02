@@ -67,8 +67,9 @@ public class Student extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         cbCourseCode = new javax.swing.JComboBox<>();
-        jSeparator1 = new javax.swing.JSeparator();
         txtTotalScore = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        txtGpax = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtTranscript = new javax.swing.JTextArea();
@@ -238,10 +239,14 @@ public class Student extends javax.swing.JFrame {
         cbCourseCode.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A4275", "B2056", "C6048", "D7079" }));
         cbCourseCode.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
-
         txtTotalScore.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         txtTotalScore.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel17.setText("Gpax :");
+
+        txtGpax.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        txtGpax.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -249,11 +254,6 @@ public class Student extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel15)
-                        .addGap(18, 18, 18)
-                        .addComponent(cbCourseCode, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -264,23 +264,31 @@ public class Student extends javax.swing.JFrame {
                                     .addComponent(jLabel3))))
                         .addGap(33, 33, 33)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtStudentID)
+                            .addComponent(txtStudentID, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
                             .addComponent(txtFirstName)
                             .addComponent(txtLastName)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel17)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel16)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtAverage, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
-                            .addComponent(txtRanking)
-                            .addComponent(txtTotalScore)))
-                    .addComponent(jSeparator1))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(txtAverage, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                                .addComponent(txtRanking)
+                                .addComponent(txtTotalScore))
+                            .addComponent(txtGpax, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel15)
+                        .addGap(18, 18, 18)
+                        .addComponent(cbCourseCode, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel8)
                             .addComponent(jLabel7)
@@ -341,15 +349,12 @@ public class Student extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel15)
                             .addComponent(cbCourseCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtChemistry, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel11))))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtChemistry, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel17)
+                    .addComponent(txtGpax, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -409,7 +414,7 @@ public class Student extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Student ID", "Course Code", "Maths", "English", "Biology", "Computer", "Chemistry", "Physics", "Add Maths", "Business", "Total Score", "Average", "Ranking"
+                "Student ID", "Course Code", "Maths", "English", "Biology", "Computer", "Chemistry", "Physics", "Add Maths", "Business", "Total Score", "Average", "Raking", "Gpax"
             }
         ));
         jScrollPane2.setViewportView(jTable1);
@@ -505,7 +510,7 @@ private  JFrame frame;
 
     private void btnTranscriptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTranscriptActionPerformed
         
-        txtTranscript.append("Student Result\n"
+        txtTranscript.append("\nStudent Result\n"
                + "======================================\n"
                + "\nMaths : \t\t" + txtMaths.getText()       
                + "\nEnglish : \t\t" + txtEnglish.getText()
@@ -519,7 +524,7 @@ private  JFrame frame;
                + "\nTotal Score : \t\t" + txtTotalScore.getText()       
                + "\nAverage : \t\t" + txtAverage.getText()       
                + "\nRanking : \t\t" + txtRanking.getText()  
-         
+               + "\nGpax : \t\t" + txtGpax.getText()
                 
         
         
@@ -538,14 +543,202 @@ private  JFrame frame;
         R[6] = Double.parseDouble(txtAddMaths.getText());
         R[7] = Double.parseDouble(txtBusiness.getText());
         
+        if(R[0] >= 80)                    // Maths
+        {
+            txtMaths.setText("A");
+        }
+        else if (R[0] >= 70)
+        {
+            txtMaths.setText("B");
+        }
+        else if (R[0] >= 60)
+        {
+            txtMaths.setText("C");
+        }
+        else if (R[0] >= 50)
+        {
+            txtMaths.setText("D");
+        }
+        else if (R[0] >= 40)
+        {
+            txtMaths.setText("Fail");
+        }
+        if(R[1] >= 80)                     // English
+        {
+            txtEnglish.setText("A");
+        }
+        else if (R[1] >= 70)
+        {
+            txtEnglish.setText("B");
+        }
+        else if (R[1] >= 60)
+        {
+            txtEnglish.setText("C");
+        }
+        else if (R[1] >= 50)
+        {
+            txtEnglish.setText("D");
+        }
+        else if (R[1] >= 40)
+        {
+            txtEnglish.setText("Fail");
+        }
+        if(R[1] >= 80) // English
+        {
+            txtEnglish.setText("A");
+        }
+        else if (R[1] >= 70)
+        {
+            txtEnglish.setText("B");
+        }
+        else if (R[1] >= 60)
+        {
+            txtEnglish.setText("C");
+        }
+        else if (R[1] >= 50)
+        {
+            txtEnglish.setText("D");
+        }
+        else if (R[1] >= 40)
+        {
+            txtEnglish.setText("Fail"); 
+        }
+        if(R[2] >= 80)                    // Biology
+        {
+            txtBiology.setText("A");
+        }
+        else if (R[2] >= 70)
+        {
+            txtBiology.setText("B");
+        }
+        else if (R[2] >= 60)
+        {
+            txtBiology.setText("C");
+        }
+        else if (R[2] >= 50)
+        {
+            txtBiology.setText("D");
+        }
+        else if (R[2] >= 40)
+        {
+            txtBiology.setText("Fail"); 
+        }
+        if(R[3] >= 80)                    // Computer
+        {
+            txtComputer.setText("A");
+        }
+        else if (R[3] >= 70)
+        {
+            txtComputer.setText("B");
+        }
+        else if (R[3] >= 60)
+        {
+            txtComputer.setText("C");
+        }
+        else if (R[3] >= 50)
+        {
+            txtComputer.setText("D");
+        }
+        else if (R[3] >= 40)
+        {
+            txtComputer.setText("Fail"); 
+        }
+        if(R[4] >= 80)                    // Chemistry
+        {
+            txtComputer.setText("A");
+        }
+        else if (R[4] >= 70)
+        {
+            txtComputer.setText("B");
+        }
+        else if (R[4] >= 60)
+        {
+            txtComputer.setText("C");
+        }
+        else if (R[4] >= 50)
+        {
+            txtComputer.setText("D");
+        }
+        else if (R[4] >= 40)
+        {
+            txtComputer.setText("Fail"); 
+        }
+        if(R[5] >= 80)                    // Physics
+        {
+            txtComputer.setText("A");
+        }
+        else if (R[5] >= 70)
+        {
+            txtComputer.setText("B");
+        }
+        else if (R[5] >= 60)
+        {
+            txtComputer.setText("C");
+        }
+        else if (R[5] >= 50)
+        {
+            txtComputer.setText("D");
+        }
+        else if (R[5] >= 40)
+        {
+            txtComputer.setText("Fail"); 
+        }
+        if(R[6] >= 80)                    // AddMaths
+        {
+            txtComputer.setText("A");
+        }
+        else if (R[6] >= 70)
+        {
+            txtComputer.setText("B");
+        }
+        else if (R[6] >= 60)
+        {
+            txtComputer.setText("C");
+        }
+        else if (R[6] >= 50)
+        {
+            txtComputer.setText("D");
+        }
+        else if (R[6] >= 40)
+        {
+            txtComputer.setText("Fail"); 
+        }
+        if(R[7] >= 80)                    // Business
+        {
+            txtComputer.setText("A");
+        }
+        else if (R[7] >= 70)
+        {
+            txtComputer.setText("B");
+        }
+        else if (R[7] >= 60)
+        {
+            txtComputer.setText("C");
+        }
+        else if (R[7] >= 50)
+        {
+            txtComputer.setText("D");
+        }
+        else if (R[7] >= 40)
+        {
+            txtComputer.setText("Fail"); 
+        }
+           
+        
+        
+              
         R[8] = (R[0] + R[1] + R[2] + R[3] + R[4] + R[5] + R[6] + R[7]) / 8;
         R[9] = R[0] + R[1] + R[2] + R[3] + R[4] + R[5] + R[6] + R[7];
+        R[10] = (R[0] + R[1] + R[2] + R[3] + R[4] + R[5] + R[6] + R[7]) / 8;
         
         String Average = String.format("%.0f",R[8]);
         txtAverage.setText(Average);
         
         String TotalScore = String.format("%.0f",R[9]);
         txtTotalScore.setText(TotalScore);
+        
+        String Gpax = String.format("%.0f",R[10]);
+        txtGpax.setText(Gpax);
         
         if(R[9] >= 700)
         {
@@ -567,7 +760,39 @@ private  JFrame frame;
         {
             txtRanking.setText("Fail");
         }
-        
+  ///////////////////////////////////////     GPAX 22    /////////////////////////////////// 
+        if(R[10] >= 80)
+        {
+            txtGpax.setText("4.00");
+        }
+        else if (R[10] >= 75)
+        {
+            txtGpax.setText("3.50");
+        }
+        else if (R[10] >= 70)
+        {
+            txtGpax.setText("3.00");
+        }
+        else if (R[10] >= 65)
+        {
+            txtGpax.setText("2.50");
+        }
+        else if (R[10] >= 60)
+        {
+            txtGpax.setText("2.00");
+        }
+        else if (R[10] >= 55)
+        {
+            txtGpax.setText("1.50");
+        }
+        else if (R[10] >= 50)
+        {
+            txtGpax.setText("1.00");
+        }
+        else if (R[10] >= 45)
+        {
+            txtGpax.setText("Fail");
+        }
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.addRow(new Object[]{
             txtStudentID.getText(),
@@ -583,6 +808,7 @@ private  JFrame frame;
             txtTotalScore.getText(),
             txtAverage.getText(),
             txtRanking.getText(),
+            txtGpax.getText(),
         });
     }//GEN-LAST:event_btnRankingActionPerformed
 
@@ -754,6 +980,7 @@ private  JFrame frame;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -766,7 +993,6 @@ private  JFrame frame;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField txtAddMaths;
     private javax.swing.JTextField txtAverage;
@@ -776,6 +1002,7 @@ private  JFrame frame;
     private javax.swing.JTextField txtComputer;
     private javax.swing.JTextField txtEnglish;
     private javax.swing.JTextField txtFirstName;
+    private javax.swing.JTextField txtGpax;
     private javax.swing.JTextField txtLastName;
     private javax.swing.JTextField txtMaths;
     private javax.swing.JTextField txtPhysics;

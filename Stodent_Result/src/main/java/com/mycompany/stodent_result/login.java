@@ -6,8 +6,6 @@ import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 import java.awt.Toolkit;
 import com.mycompany.stodent_result.Student;
-import com.mycompany.stodent_result.Student;
-import com.mycompany.stodent_result.Student;
 import java.awt.event.KeyEvent;
 /*
  * To change this license header, choose License Headers in Project Properties.
